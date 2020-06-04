@@ -81,7 +81,7 @@
 .tag8 { transform: rotate(315deg); }
 
 @media screen and (max-width:768px) {
-  .menu-list {
+  .menu {
     left: 12vw;
     transform-origin: -12vw center;
   }
