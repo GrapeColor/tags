@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "SFMono-Bold";
+  src: url("../fonts/SFMono-Bold.otf") format("opentype");
+}
+
+body {
+  background-color: black;
+}
+
+.menu {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.menu-list {
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 5vw);
+  transform : translate(-50%, -50%);
+  transform-origin: -5vw center;
+  animation: r2 20s linear infinite;
+}
+
+.tags {
+  font-family: "SFMono-Bold";
+  font-size: 5vw;
+  line-height: 0;
+  white-space: nowrap;
+  transform-origin: -5vw center;
+  color: #c00000;
+}
+
+.tags:hover {
+  color: white;
+}
+
+.tag1 { transform: rotate(0deg);   }
+.tag2 { transform: rotate(45deg);  }
+.tag3 { transform: rotate(90deg);  }
+.tag4 { transform: rotate(135deg); }
+.tag5 { transform: rotate(180deg); }
+.tag6 { transform: rotate(225deg); }
+.tag7 { transform: rotate(270deg); }
+.tag8 { transform: rotate(315deg); }
+
+@keyframes r2 {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+@media screen and (max-width:768px) {
+  .menu-list {
+    left: 10vw;
+    transform-origin: -10vw center;
+  }
+
+  .tags {
+    font-size: 10vw;
+    transform-origin: -10vw center;
+  }
+}
