@@ -1,17 +1,24 @@
 @font-face {
   font-family: "SFMono-Bold";
-  src: url("../fonts/SFMono-Bold.otf") format("opentype");
+  src: url(../fonts/SFMono-Bold.otf) format("opentype");
 }
 
-body {
-  background-color: black;
-}
-
-.menu {
-  overflow: hidden;
+.content {
   position: relative;
-  width: 100vw;
+  overflow: hidden;
+  width: 100%;
   height: 100vh;
+  background: url(../media/index_bg.png) no-repeat center center/cover;
+}
+
+.bg-video {
+  min-width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform : translate(-50%, -50%);
+  z-index: 1;
 }
 
 .menu-list {
@@ -21,6 +28,7 @@ body {
   transform : translate(-50%, -50%);
   transform-origin: -5vw center;
   animation: r2 20s linear infinite;
+  z-index: 2;
 }
 
 .tags {
@@ -52,12 +60,12 @@ body {
 
 @media screen and (max-width:768px) {
   .menu-list {
-    left: 10vw;
-    transform-origin: -10vw center;
+    left: 12vw;
+    transform-origin: -12vw center;
   }
 
   .tags {
-    font-size: 10vw;
-    transform-origin: -10vw center;
+    font-size: 12vw;
+    transform-origin: -12vw center;
   }
 }
