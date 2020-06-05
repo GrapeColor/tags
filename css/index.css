@@ -29,17 +29,17 @@
   margin: 0;
   vertical-align: middle;
   white-space: nowrap;
-  color: white;
-  text-shadow: black 5px 5px 5px;
+  color: #fdfcf5; /* 白百合 */
+  text-shadow: #080000 5px 5px 5px; /* 漆黒 */
   z-index: 2;
 }
 
 .menu {
   position: absolute;
   top: 50%;
-  left: calc(50% + 5vw);
+  left: calc(50% + 10vh);
   transform : translate(-50%, -50%);
-  transform-origin: -5vw center;
+  transform-origin: -10vh center;
   animation: rotation 20s linear infinite;
   z-index: 3;
 }
@@ -50,15 +50,15 @@
 }
 
 .tags {
-  font-size: 5vw;
+  font-size: 10vh;
   vertical-align: middle;
   line-height: 0;
   white-space: nowrap;
-  transform-origin: -5vw center;
-  color: #c00000;
-  text-shadow: black 0.5vw 0.5vw 0.5vw;
+  transform-origin: -10vh center;
+  color: #ad002d; /* 真紅 */
+  text-shadow: #080000 1vh 1vh 1vh; /* 漆黒 */
   opacity: 0;
-  animation: fadeIn 1s;
+  animation: fadeIn 3s;
   animation-fill-mode: forwards;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .tags:hover {
-  color: white;
+  color: #fdfcf5; /* 白百合 */
 }
 
 .tag1 { transform: rotate(0deg);   }
