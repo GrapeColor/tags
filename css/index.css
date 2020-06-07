@@ -38,9 +38,9 @@
 .menu {
   position: absolute;
   top: 50%;
-  left: calc(50% + 10vh);
+  left: calc(50% + 9vh);
   transform : translate(-50%, -50%);
-  transform-origin: -10vh center;
+  transform-origin: -9vh center;
   animation: rotation 20s linear infinite;
   z-index: 3;
 }
@@ -51,11 +51,11 @@
 }
 
 .tags {
-  font-size: 10vh;
+  font-size: 9vh;
   vertical-align: middle;
   line-height: 0;
   white-space: nowrap;
-  transform-origin: -10vh center;
+  transform-origin: -9vh center;
   color: #7d7d7d; /* 鼠色 */
   text-shadow: #080000 1vh 1vh 1vh; /* 漆黒 */
   opacity: 0;
@@ -68,8 +68,13 @@
   to   { opacity: 1; }
 }
 
-.tags a { color: #ad002d; /* 真紅 */ }
-.tags a:hover { color: #fdfcf5; /* 白百合 */ }
+.tags a {
+  color: #ad002d; /* 真紅 */
+  text-decoration-line: none;
+}
+.tags a:hover {
+  color: #fdfcf5; /* 白百合 */
+}
 
 .tag1 { transform: rotate(0deg);   }
 .tag2 { transform: rotate(45deg);  }
@@ -80,14 +85,26 @@
 .tag7 { transform: rotate(270deg); }
 .tag8 { transform: rotate(315deg); }
 
+.twitter {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 4;
+}
+
+.fa-twitter {
+  color: #0086A2; /* 孔雀青 */
+  text-shadow: #080000 5px 5px 5px; /* 漆黒 */
+}
+
 @media screen and (max-width:768px) {
   .menu {
-    left: 12vw;
-    transform-origin: -12vw center;
+    left: 10vw;
+    transform-origin: -10vw center;
   }
 
   .tags {
-    font-size: 12vw;
-    transform-origin: -12vw center;
+    font-size: 10vw;
+    transform-origin: -10vw center;
   }
 }
