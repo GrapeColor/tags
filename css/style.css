@@ -3,6 +3,17 @@
   src: url(../fonts/SFMono-Bold.otf) format("opentype");
 }
 
-.navbar {
+body {
+  font-family: "Sawarabi Gothic";
+}
+
+.navbar, .pagination {
   font-family: "SFMono-Bold";
+}
+
+.card-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  border-radius: 50%;
 }
