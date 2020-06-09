@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "SFMono-Bold";
+  src: url(../fonts/SFMono-Bold.otf) format("opentype");
+}
+
+.navbar {
+  font-family: "SFMono-Bold";
+}
