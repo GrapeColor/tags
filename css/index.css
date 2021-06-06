@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "SFMono-Bold";
+  src: url(../fonts/SFMono-Bold.otf) format("opentype");
+}
+
+.content {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/index_bg.png) no-repeat center center/cover;
+  font-family: "SFMono-Bold";
+}
+
+.bg-video {
+  min-width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform : translate(-50%, -50%);
+  z-index: 1;
+}
+
+.doctype {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  margin: 0;
+  vertical-align: middle;
+  white-space: nowrap;
+  color: #fdfcf5; /* 白百合色 */
+  text-shadow: #080000 5px 5px 5px; /* 漆黒 */
+  font-size: 2vh;
+  z-index: 2;
+}
+
+.menu {
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 8vh);
+  transform : translate(-50%, -50%);
+  transform-origin: -8vh center;
+  animation: rotation 20s linear infinite;
+  z-index: 3;
+}
+
+@keyframes rotation {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(-360deg); }
+}
+
+.tags {
+  height: 0;
+  font-size: 8vh;
+  line-height: 0;
+  white-space: nowrap;
+  transform-origin: -8vh center;
+  color: #7d7d7d; /* 鼠色 */
+  text-shadow: #080000 1vh 1vh 1vh; /* 漆黒 */
+  opacity: 0;
+  animation: fadeIn 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.tags a {
+  color: #ad002d; /* 真紅 */
+  text-decoration-line: none;
+}
+.tags a:hover {
+  color: #fdfcf5; /* 白百合色 */
+}
+
+.tags:nth-child(1) { transform: rotate(0deg);   }
+.tags:nth-child(2) { transform: rotate(45deg);  }
+.tags:nth-child(3) { transform: rotate(90deg);  }
+.tags:nth-child(4) { transform: rotate(135deg); }
+.tags:nth-child(5) { transform: rotate(180deg); }
+.tags:nth-child(6) { transform: rotate(225deg); }
+.tags:nth-child(7) { transform: rotate(270deg); }
+.tags:nth-child(8) { transform: rotate(315deg); }
+
+.twitter {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 4;
+}
+
+.fa-twitter {
+  color: #105779; /* 藍色 */
+  text-shadow: #080000 5px 5px 5px; /* 漆黒 */
+}
+
+@media screen and (max-width:768px) {
+  .menu {
+    left: 10vw;
+    transform-origin: -10vw center;
+  }
+
+  .tags {
+    font-size: 10vw;
+    transform-origin: -10vw center;
+  }
+}

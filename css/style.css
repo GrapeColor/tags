@@ -3,18 +3,57 @@
   src: url(../fonts/SFMono-Bold.otf) format("opentype");
 }
 
+@font-face {
+  font-family: "HG正楷書体-PRO";
+  src: url(../fonts/HGRSKP.TTF) format("truetype");
+}
+
 body {
   font-family: "Sawarabi Gothic";
+}
+
+h1 {
+  font-family: "SFMono-Bold";
 }
 
 .navbar, .pagination {
   font-family: "SFMono-Bold";
 }
 
+.name-plate {
+  font-family: "HG正楷書体-PRO";
+}
+
+.social-icon {
+  width: 80px;
+  height: 80px;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.social-icon:hover {
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(-360deg); }
+}
+
+.card-img-top {
+  max-height: 75vh;
+  object-fit: contain;
+  background-color: #080000; /* 漆黒 */
+}
+
+.card-header {
+  line-height: 3.0;
+}
+
 .card-icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 5px;
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
   border-radius: 50%;
 }
 
@@ -28,6 +67,17 @@ body {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  width: 96px;
-  height: 96px;
+  width: 80px;
+}
+
+.to-top:hover {
+  animation: oscillation 0.1s infinite;
+}
+
+@keyframes oscillation {
+  0% {transform: translate(0px, 0px) rotateZ(0deg)}
+  25% {transform: translate(2px, 2px) rotateZ(1deg)}
+  50% {transform: translate(0px, 2px) rotateZ(0deg)}
+  75% {transform: translate(2px, 0px) rotateZ(-1deg)}
+  100% {transform: translate(0px, 0px) rotateZ(0deg)}
 }
