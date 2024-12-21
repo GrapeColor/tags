@@ -1,6 +1,6 @@
 # tags
-https://amemori.vineder.com  
-このサイトは、にじさんじ所属のバーチャルライバー『[雨森小夜](https://www.nijisanji.jp/members/sayo-amemori)』さんの活動2周年を記念して制作されたものです。  
+https://amemori.grupa.jp  
+このサイトは、にじさんじ所属のバーチャルライバー『[雨森小夜](https://www.nijisanji.jp/talents/l/sayo-amemori)』さんの活動2周年を記念して制作されたものです。  
 サイト内に掲載された各作品は、本企画に際してファンの方々から募集したものとなります。  
 
 ## サイトのモチーフ
