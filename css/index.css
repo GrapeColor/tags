@@ -41,7 +41,7 @@
   left: calc(50% + 8vh);
   transform : translate(-50%, -50%);
   transform-origin: -8vh center;
-  animation: rotation 20s linear infinite;
+  animation: rotation 30s linear infinite;
   z-index: 3;
 }
 
